@@ -7,7 +7,6 @@ R_PR1 = 0.032  # R_pr1 m
 OMEGA = 418.8  # rad / s
 
 def calc_M_pr(H, alfa):
-    print(alfa, math.sin(2 * alfa))
     return H * R_PR1 * OMEGA ** 2 * math.sin(2 * alfa)
 
 def calc_new_M_kr_arr(M_kr_arr, H):
@@ -16,7 +15,7 @@ def calc_new_M_kr_arr(M_kr_arr, H):
     # alfe = index в град
     for alfa, M_kr in enumerate(M_kr_arr):
         alfa_rad = math.radians(alfa)
-        new_M_kr_arr.append(M_kr - abs(calc_M_pr(H, alfa_rad)))
+        new_M_kr_arr.append(M_kr - calc_M_pr(H, alfa_rad))
 
     return new_M_kr_arr
 
@@ -40,7 +39,7 @@ if __name__ == "__main__":
         for line in f:
             M_kr_arr.append(float(line.rstrip().replace(',','.')))
 
-    new_M_kr_arr = calc_new_M_kr_arr(M_kr_arr, 0.04)
+    new_M_kr_arr = calc_new_M_kr_arr(M_kr_arr, 0.5)
 
     print_MAX_MIN_AVG(M_kr_arr)
     print_MAX_MIN_AVG(new_M_kr_arr)
