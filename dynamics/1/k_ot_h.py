@@ -1,4 +1,5 @@
 import math
+import matplotlib.pyplot as plt
 
 DATA_FILE_NAME = 'M_kr.txt'
 
@@ -26,7 +27,7 @@ def print_MAX_MIN_AVG(M_kr_arr):
 
 def calc_K(M_kr_arr):
     max_M_kr = max(M_kr_arr)
-    min_M_kr = min(M_kr_arr)
+    # min_M_kr = min(M_kr_arr)
     avg_M_kr = sum(M_kr_arr) / len(M_kr_arr)
 
     return max_M_kr / avg_M_kr
@@ -39,12 +40,30 @@ if __name__ == "__main__":
         for line in f:
             M_kr_arr.append(float(line.rstrip().replace(',','.')))
 
-    new_M_kr_arr = calc_new_M_kr_arr(M_kr_arr, 0.5)
+    max_H = 0.3
+    min_H = 0
+    itterations = 1000
+    delta = (max_H - min_H) / itterations
 
-    print_MAX_MIN_AVG(M_kr_arr)
-    print_MAX_MIN_AVG(new_M_kr_arr)
-    print(calc_K(M_kr_arr))
-    print(calc_K(new_M_kr_arr))
+    arr_of_K = []
+    arr_of_H = []
+
+    currH = min_H
+
+    while currH <= max_H:
+        new_M_kr_arr = calc_new_M_kr_arr(M_kr_arr, currH)
+        arr_of_H.append(currH)
+        arr_of_K.append(calc_K(new_M_kr_arr))
+
+        currH += delta
+
+    plt.plot(arr_of_H, arr_of_K)
+    plt.show()
+
+    # print_MAX_MIN_AVG(M_kr_arr)
+    # print_MAX_MIN_AVG(new_M_kr_arr)
+    # print(calc_K(M_kr_arr))
+    # print(calc_K(new_M_kr_arr))
     # print()
     # print()
     # print()
