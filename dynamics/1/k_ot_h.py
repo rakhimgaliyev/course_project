@@ -27,7 +27,7 @@ def print_MAX_MIN_AVG(M_kr_arr):
 
 def calc_K(M_kr_arr):
     max_M_kr = max(M_kr_arr)
-    # min_M_kr = min(M_kr_arr)
+    min_M_kr = min(M_kr_arr)
     avg_M_kr = sum(M_kr_arr) / len(M_kr_arr)
 
     return max_M_kr / avg_M_kr
