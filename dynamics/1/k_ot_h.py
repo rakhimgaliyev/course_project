@@ -16,7 +16,7 @@ def calc_new_M_kr_arr(M_kr_arr, H):
     # alfe = index в град
     for alfa, M_kr in enumerate(M_kr_arr):
         alfa_rad = math.radians(alfa)
-        new_M_kr_arr.append(M_kr - calc_M_pr(H, alfa_rad))
+        new_M_kr_arr.append(M_kr + calc_M_pr(H, alfa_rad))
 
     return new_M_kr_arr
 
@@ -30,8 +30,8 @@ def calc_K(M_kr_arr):
     min_M_kr = min(M_kr_arr)
     avg_M_kr = sum(M_kr_arr) / len(M_kr_arr)
 
-    return max_M_kr / avg_M_kr
-    # return (max_M_kr - min_M_kr) / avg_M_kr
+    # return max_M_kr / avg_M_kr
+    return (max_M_kr - min_M_kr) / avg_M_kr
 
 
 if __name__ == "__main__":
@@ -39,6 +39,8 @@ if __name__ == "__main__":
     with open(DATA_FILE_NAME) as f:
         for line in f:
             M_kr_arr.append(float(line.rstrip().replace(',','.')))
+
+    # print("avg:", sum(M_kr_arr) / len(M_kr_arr))
 
     max_H = 0.3
     min_H = 0
