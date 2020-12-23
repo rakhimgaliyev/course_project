@@ -100,7 +100,7 @@ TurbineLP_frmTurCharFile_txt=
 CompressorLP_frmCmpCharFile_txt=
 CoreOptions_frmSuccessWAV=SystemNotification
 CoreOptions_frmFailWAV=SystemHand
-ICE_Simulation_frmComment=двумерное по эпсилон и УОВТ, n=1000
+ICE_Simulation_frmComment=двумерное по эпсилон и УОВТ, n=4000
 
 [Float]
 CPG_frmFloat_Field4=0.264
@@ -733,10 +733,10 @@ GasExchange_frmcbDv_out2t=0
 GasExchange_frmAdvCheckBox10=1
 GasExchange_frmAdvCheckBox2=0
 GasExchange_frmAdvCheckBox6=0
-Mode_frmR1=0
+Mode_frmR1=1
 Mode_frmR2=0
 Mode_frmR3=0
-Mode_frmR4=1
+Mode_frmR4=0
 Mode_frmR5=0
 Mode_frmR6=0
 Mode_frmR7=0
@@ -3778,8 +3778,8 @@ YParamsCount4=5
 YParamsMin5=12
 YParamsMax5=20
 YParamsCount5=5
-YParamsMin6=13
-YParamsMax6=38
+YParamsMin6=5
+YParamsMax6=30
 YParamsCount6=5
 YParamsMin7=12
 YParamsMax7=3
