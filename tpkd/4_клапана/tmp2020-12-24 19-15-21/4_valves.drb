@@ -100,7 +100,7 @@ TurbineLP_frmTurCharFile_txt=
 CompressorLP_frmCmpCharFile_txt=
 CoreOptions_frmSuccessWAV=SystemNotification
 CoreOptions_frmFailWAV=SystemHand
-ICE_Simulation_frmComment=режим, n=1000, уовт=5, степень сжатия=15,5
+ICE_Simulation_frmComment=режим, n=4000, уовт=15, степень сжатия=18.6
 
 [Float]
 CPG_frmFloat_Field4=0.264
@@ -135,7 +135,7 @@ CPG_frmFloat_Field19=1
 CPG_frmFloat_Field26=2.5
 CPG_frmFloat_Field27=360
 CPG_frmFloat_Field11=1.5
-CPG_frmFloat_Field5=15.5
+CPG_frmFloat_Field5=18.6
 CPG_frmFloat_Field3=95
 CPG_frmFloat_Field2=91.1
 CPG_frmRPMNom=4000
@@ -733,10 +733,10 @@ GasExchange_frmcbDv_out2t=0
 GasExchange_frmAdvCheckBox10=1
 GasExchange_frmAdvCheckBox2=0
 GasExchange_frmAdvCheckBox6=0
-Mode_frmR1=0
+Mode_frmR1=1
 Mode_frmR2=0
 Mode_frmR3=0
-Mode_frmR4=1
+Mode_frmR4=0
 Mode_frmR5=0
 Mode_frmR6=0
 Mode_frmR7=0
@@ -923,10 +923,10 @@ Mode_frmModeTable_3_17=
 Mode_frmModeTable_3_18=
 Mode_frmModeTable_3_19=
 Mode_frmModeTable_3_20=
-Mode_frmModeTable_4_1=16
-Mode_frmModeTable_4_2=13
-Mode_frmModeTable_4_3=10.5
-Mode_frmModeTable_4_4=5
+Mode_frmModeTable_4_1=15
+Mode_frmModeTable_4_2=9
+Mode_frmModeTable_4_3=7
+Mode_frmModeTable_4_4=6
 Mode_frmModeTable_4_5=10
 Mode_frmModeTable_4_6=10
 Mode_frmModeTable_4_7=10

@@ -100,7 +100,7 @@ TurbineLP_frmTurCharFile_txt=
 CompressorLP_frmCmpCharFile_txt=
 CoreOptions_frmSuccessWAV=SystemNotification
 CoreOptions_frmFailWAV=SystemHand
-ICE_Simulation_frmComment=режим, n=1000, уовт=5, степень сжатия=15,5
+ICE_Simulation_frmComment=режим, n=3000, уовт=13, степень сжатия=15,5
 
 [Float]
 CPG_frmFloat_Field4=0.264
@@ -734,9 +734,9 @@ GasExchange_frmAdvCheckBox10=1
 GasExchange_frmAdvCheckBox2=0
 GasExchange_frmAdvCheckBox6=0
 Mode_frmR1=0
-Mode_frmR2=0
+Mode_frmR2=1
 Mode_frmR3=0
-Mode_frmR4=1
+Mode_frmR4=0
 Mode_frmR5=0
 Mode_frmR6=0
 Mode_frmR7=0
@@ -925,8 +925,8 @@ Mode_frmModeTable_3_19=
 Mode_frmModeTable_3_20=
 Mode_frmModeTable_4_1=16
 Mode_frmModeTable_4_2=13
-Mode_frmModeTable_4_3=10.5
-Mode_frmModeTable_4_4=5
+Mode_frmModeTable_4_3=6
+Mode_frmModeTable_4_4=6
 Mode_frmModeTable_4_5=10
 Mode_frmModeTable_4_6=10
 Mode_frmModeTable_4_7=10
