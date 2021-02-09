@@ -2,9 +2,8 @@ import math
 import matplotlib.pyplot as plt
 
 
-# в метрах
-def get_x_axis_data_arr():
-    array_of_L_pr = [
+def get_arr_of_L_pr():
+    return [
         0.171, # 1
         0.171, # 2
         0.171, # 3
@@ -25,6 +24,10 @@ def get_x_axis_data_arr():
         482, # 18
     ]
 
+# в метрах
+def get_x_axis_data_arr():
+    array_of_L_pr = get_arr_of_L_pr()
+
     res = []
     for l_pr in array_of_L_pr:
         if len(res) > 0:
@@ -33,6 +36,36 @@ def get_x_axis_data_arr():
             res.append(l_pr)
 
     return res
+
+def generate_x_axis(array_of_L_pr):
+    res = []
+    for l_pr in array_of_L_pr:
+        if len(res) > 0:
+            res.append(l_pr + res[-1])
+        else:
+            res.append(l_pr)
+
+    return res
+
+
+# главная ветка
+def get_first_arr_of_L_pr():
+    array_of_L_pr = get_arr_of_L_pr()
+    return generate_x_axis(array_of_L_pr[:8] + array_of_L_pr[11:])
+
+# побочная ветка
+def get_second_arr_of_L_pr():
+    array_of_L_pr = get_arr_of_L_pr()
+    return generate_x_axis(array_of_L_pr[:7] + array_of_L_pr[8:11])
+
+
+# главная ветка
+def get_first_arr_of_data(data):
+    return data[:8] + data[11:]
+
+# побочная ветка
+def get_second_arr_of_data(data):
+    return data[:7] + data[8:11]
 
 
 if __name__ == "__main__":
@@ -269,17 +302,39 @@ if __name__ == "__main__":
         -0.0000000000001587, # 18
     ]
 
-    plt.plot(x_axis_data, i_2_data, label='i=2')
-    plt.plot(x_axis_data, i_3_data, label='i=3')
-    plt.plot(x_axis_data, i_4_data, label='i=4')
-    plt.plot(x_axis_data, i_5_data, label='i=5')
-    plt.plot(x_axis_data, i_6_data, label='i=6')
-    plt.plot(x_axis_data, i_7_data, label='i=7')
-    plt.plot(x_axis_data, i_8_data, label='i=8')
-    plt.plot(x_axis_data, i_9_data, label='i=9')
-    plt.plot(x_axis_data, i_10_data, label='i=10')
-    plt.plot(x_axis_data, i_11_data, label='i=11')
-    plt.plot(x_axis_data, i_12_data, label='i=12')
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_2_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_2_data), label='i=2')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_3_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_3_data), label='i=3')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_4_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_4_data), label='i=4')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_5_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_5_data), label='i=5')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_6_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_6_data), label='i=6')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_7_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_7_data), label='i=7')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_8_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_8_data), label='i=8')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_9_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_9_data), label='i=9')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_10_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_10_data), label='i=10')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_11_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_11_data), label='i=11')
+
+    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_12_data))
+    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_12_data), label='i=12')
+
     plt.legend(loc="upper right")
 
     plt.show()
