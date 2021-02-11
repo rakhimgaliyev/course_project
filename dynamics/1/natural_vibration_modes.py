@@ -155,185 +155,191 @@ if __name__ == "__main__":
         0.07898, # 18
     ]
 
-    i_6_data = [
-        1, # 1
-        0.4637, # 2
-        -0.3192, # 3
-        -0.9324, # 4
-        -10.66, # 5
-        790.9, # 6
-        2183, # 7
-        4165, # 8
-        4583, # 9
-        6014, # 10
-        7152, # 11
-        4009, # 12
-        -51230, # 13
-        -73260, # 14
-        13870, # 15
-        -82600, # 16
-        -3129, # 17
-        0.4665, # 18
-    ]
+    # i_6_data = [
+    #     1, # 1
+    #     0.4637, # 2
+    #     -0.3192, # 3
+    #     -0.9324, # 4
+    #     -10.66, # 5
+    #     790.9, # 6
+    #     2183, # 7
+    #     4165, # 8
+    #     4583, # 9
+    #     6014, # 10
+    #     7152, # 11
+    #     4009, # 12
+    #     -51230, # 13
+    #     -73260, # 14
+    #     13870, # 15
+    #     -82600, # 16
+    #     -3129, # 17
+    #     0.4665, # 18
+    # ]
 
-    i_7_data = [
-        1, # 1
-        0.4063, # 2
-        -0.4267, # 3
-        -1.008, # 4
-        0.0009740, # 5
-        0.001386, # 6
-        0.002, # 7
-        -0.0001773, # 8
-        -0.000198, # 9
-        -0.00027, # 10
-        -0.0003278, # 11
-        -0.0001771, # 12
-        0.0002093, # 13
-        0.0003091, # 14
-        -0.00004701, # 15
-        0.0003536, # 16
-        0.000009634, # 17
-        -0.000000001783, # 18
-    ]
+    # i_7_data = [
+    #     1, # 1
+    #     0.4063, # 2
+    #     -0.4267, # 3
+    #     -1.008, # 4
+    #     0.0009740, # 5
+    #     0.001386, # 6
+    #     0.002, # 7
+    #     -0.0001773, # 8
+    #     -0.000198, # 9
+    #     -0.00027, # 10
+    #     -0.0003278, # 11
+    #     -0.0001771, # 12
+    #     0.0002093, # 13
+    #     0.0003091, # 14
+    #     -0.00004701, # 15
+    #     0.0003536, # 16
+    #     0.000009634, # 17
+    #     -0.000000001783, # 18
+    # ]
 
-    i_8_data = [
-        1, # 1
-        0.0492, # 2
-        -0.0948, # 3
-        -1.051, # 4
-        72.71, # 5
-        -9618, # 6
-        -25770, # 7
-        874.7, # 8
-        1116, # 9
-        2097, # 10
-        2922, # 11
-        879.2, # 12
-        -143.7, # 13
-        -319.3, # 14
-        16.56, # 15
-        -402, # 16
-        -1.967, # 17
-        0.001238, # 18
-    ]
+    # i_8_data = [
+    #     1, # 1
+    #     0.0492, # 2
+    #     -0.0948, # 3
+    #     -1.051, # 4
+    #     72.71, # 5
+    #     -9618, # 6
+    #     -25770, # 7
+    #     874.7, # 8
+    #     1116, # 9
+    #     2097, # 10
+    #     2922, # 11
+    #     879.2, # 12
+    #     -143.7, # 13
+    #     -319.3, # 14
+    #     16.56, # 15
+    #     -402, # 16
+    #     -1.967, # 17
+    #     0.001238, # 18
+    # ]
 
-    i_9_data = [
-        1, # 1
-        -1.015, # 2
-        -1.001, # 3
-        1.014, # 4
-        -0.0002904, # 5
-        -0.0001254, # 6
-        0.0002188, # 7
-        0.00002026, # 8
-        0.00001508, # 9
-        -0.00002921, # 10
-        -0.00007267, # 11
-        0.00002103, # 12
-        0.0001383, # 13
-        -0.0003029, # 14
-        -0.00000657, # 15
-        -0.0005451, # 16
-        0.0000003462, # 17
-        0.000000000788, # 18
-    ]
+    # i_9_data = [
+    #     1, # 1
+    #     -1.015, # 2
+    #     -1.001, # 3
+    #     1.014, # 4
+    #     -0.0002904, # 5
+    #     -0.0001254, # 6
+    #     0.0002188, # 7
+    #     0.00002026, # 8
+    #     0.00001508, # 9
+    #     -0.00002921, # 10
+    #     -0.00007267, # 11
+    #     0.00002103, # 12
+    #     0.0001383, # 13
+    #     -0.0003029, # 14
+    #     -0.00000657, # 15
+    #     -0.0005451, # 16
+    #     0.0000003462, # 17
+    #     0.000000000788, # 18
+    # ]
 
-    i_10_data = [
-        1, # 1
-        -1.019, # 2
-        -0.9971, # 3
-        1.022, # 4
-        -1.311, # 5
-        370, # 6
-        921.5, # 7
-        -4643, # 8
-        3467, # 9
-        6632, # 10
-        16550, # 11
-        -4996, # 12
-        -87520, # 13
-        189900, # 14
-        4150, # 15
-        342300, # 16
-        -218.2, # 17
-        -0.4938, # 18
-    ]
+    # i_10_data = [
+    #     1, # 1
+    #     -1.019, # 2
+    #     -0.9971, # 3
+    #     1.022, # 4
+    #     -1.311, # 5
+    #     370, # 6
+    #     921.5, # 7
+    #     -4643, # 8
+    #     3467, # 9
+    #     6632, # 10
+    #     16550, # 11
+    #     -4996, # 12
+    #     -87520, # 13
+    #     189900, # 14
+    #     4150, # 15
+    #     342300, # 16
+    #     -218.2, # 17
+    #     -0.4938, # 18
+    # ]
 
-    i_11_data = [
-        1, # 1
-        -1.411, # 2
-        -0.4477, # 3
-        1.586, # 4
-        -144.5, # 5
-        48720, # 6
-        118000, # 7
-        -812100, # 8
-        -731500, # 9
-        521600, # 10
-        1833000, # 11
-        -827600, # 12
-        130300, # 13
-        -136200, # 14
-        -5085, # 15
-        -291500, # 16
-        222.1, # 17
-        0.3522, # 18
-    ]
+    # i_11_data = [
+    #     1, # 1
+    #     -1.411, # 2
+    #     -0.4477, # 3
+    #     1.586, # 4
+    #     -144.5, # 5
+    #     48720, # 6
+    #     118000, # 7
+    #     -812100, # 8
+    #     -731500, # 9
+    #     521600, # 10
+    #     1833000, # 11
+    #     -827600, # 12
+    #     130300, # 13
+    #     -136200, # 14
+    #     -5085, # 15
+    #     -291500, # 16
+    #     222.1, # 17
+    #     0.3522, # 18
+    # ]
 
-    i_12_data = [
-        1, # 1
-        -2.441, # 2
-        2.449, # 3
-        -1.020, # 4
-        0.0001709, # 5
-        0.0001112, # 6
-        -0.0000624, # 7
-        0.00000255, # 8
-        0.000002798, # 9
-        0.00000007114, # 10
-        -0.00000338, # 11
-        0.000002626, # 12
-        -0.0000001621, # 13
-        0.00000004434, # 14
-        0.000000004319, # 15
-        0.0000001875, # 16
-        -0.0000000001304, # 17
-        -0.0000000000001587, # 18
-    ]
+    # i_12_data = [
+    #     1, # 1
+    #     -2.441, # 2
+    #     2.449, # 3
+    #     -1.020, # 4
+    #     0.0001709, # 5
+    #     0.0001112, # 6
+    #     -0.0000624, # 7
+    #     0.00000255, # 8
+    #     0.000002798, # 9
+    #     0.00000007114, # 10
+    #     -0.00000338, # 11
+    #     0.000002626, # 12
+    #     -0.0000001621, # 13
+    #     0.00000004434, # 14
+    #     0.000000004319, # 15
+    #     0.0000001875, # 16
+    #     -0.0000000001304, # 17
+    #     -0.0000000000001587, # 18
+    # ]
 
     plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_2_data))
+    plt.scatter(get_second_arr_of_L_pr(), get_second_arr_of_data(i_2_data))
+
     plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_2_data), label='i=2')
+    plt.scatter(get_first_arr_of_L_pr(), get_first_arr_of_data(i_2_data))
 
     plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_3_data))
+    plt.scatter(get_second_arr_of_L_pr(), get_second_arr_of_data(i_3_data))
+
     plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_3_data), label='i=3')
+    plt.scatter(get_first_arr_of_L_pr(), get_first_arr_of_data(i_3_data))
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_4_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_4_data), label='i=4')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_4_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_4_data), label='i=4')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_5_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_5_data), label='i=5')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_5_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_5_data), label='i=5')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_6_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_6_data), label='i=6')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_6_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_6_data), label='i=6')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_7_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_7_data), label='i=7')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_7_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_7_data), label='i=7')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_8_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_8_data), label='i=8')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_8_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_8_data), label='i=8')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_9_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_9_data), label='i=9')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_9_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_9_data), label='i=9')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_10_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_10_data), label='i=10')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_10_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_10_data), label='i=10')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_11_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_11_data), label='i=11')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_11_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_11_data), label='i=11')
 
-    plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_12_data))
-    plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_12_data), label='i=12')
+    # plt.plot(get_second_arr_of_L_pr(), get_second_arr_of_data(i_12_data))
+    # plt.plot(get_first_arr_of_L_pr(), get_first_arr_of_data(i_12_data), label='i=12')
 
     plt.legend(loc="upper right")
 
